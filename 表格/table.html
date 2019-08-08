@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table width="500" 
+           height="300" 
+           cellspacing="20"
+           cellpadding="50"
+           align="center"
+           border="1">
+        <caption>4x3表格</caption>
+        <thead>
+                <tr>
+                        <th>attr1</th>
+                        <th>attr2</th>
+                        <th>attr3</th>
+                    </tr>
+        </thead>
+        <tbody>
+                <tr>
+                        <th>record1</th>
+                        <td>data1</td>
+                        <td>data2</td>
+                    </tr>
+            
+                    <tr>
+                        <th>record2</th>
+                        <td>data3</td>
+                        <td>data2</td>
+                    </tr>
+                    <tr>
+                        <th>record3</th>
+                        <td>data4</td>
+                        <td>data4</td>
+                    </tr>
+        </tbody>
+
+    </table>
+    <table width="500" 
+           height="300" 
+           cellspacing="20"
+           cellpadding="50"
+           align="center"
+           border="1">
+        <caption>4x3表格</caption>
+        <thead>
+                <tr>
+                        <th>attr1</th>
+                        <th>attr2</th>
+                        <th>attr3</th>
+                    </tr>
+        </thead>
+        <tbody>
+                <tr>
+                        <th>record1</th>
+                        <td>data1</td>
+                        <td rowspan="2">data2</td>
+                    </tr>
+            
+                    <tr>
+                        <th>record2</th>
+                        <td>data3</td>
+                        <!-- <td>data2</td> -->
+                    </tr>
+                    <tr>
+                            <th>record3</th>
+                            <td colspan="2">data4</td>
+                            <!-- <td>data4</td> -->
+                        </tr>
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
