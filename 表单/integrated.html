@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset> 
+            <legend>学生档案</legend>
+            <label>姓名: <input type="text" placeholder="请输入您的姓名"></label><br>
+            <label>手机: <input type="tel" placeholder="请输入您的手机号码" required></label><br>
+            <label>邮箱: <input type="email" placeholder="请输入您的邮箱"></label><br>
+            <label>学院: <input type="text" list="xy"></label><br>
+            <datalist id="xy">
+                <option value="数学学院"></option>
+                <option value="艺术学院"></option>
+                <option value="文学w院"></option>
+            </datalist>
+            <label>出生日期: <input type="date"></label><br>
+            <label>入学成绩: <input type="number" max="100" min="0"></label><br>
+             基础水平: <meter max="100" min="0" value="88"></meter><br>
+            <input type="submit">
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

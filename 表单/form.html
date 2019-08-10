@@ -42,6 +42,45 @@
         各种表单控件及label
     </form>
 
+
+    <fieldset>
+            <legend>health information</legend>
+            height: <input type="text" /><br>
+            weight: <input type="text" /><br>
+            <form action="">
+                  邮箱：<input type="email"><br>
+                  <!-- 在手机端会弹出数字键盘 -->
+                  电话号码：<input type="tel"><br>
+                  链接：<input type="url"><br>
+                  数字：<input type="number"><br>
+                  <!-- 多一个小x号，可以清空输入数据 -->
+                  搜索：<input type="search"><br>
+                  <!-- 可以搭配css调控音量 -->
+                  范围：<input type="range"><br>
+                  日期 <input type="date"><br>
+                  时间：<input type="datetime"><br>
+                  月年<input type="month"><br>
+                  星期年<input type="week"><br>
+                  颜色 <input type="color"><br>
+                  <!-- type check will happend in the submit button -->
+                  <input type="submit">
+            </form>
+           </fieldset>
+
+            <fieldset>   
+                <legend>常用新属性</legend>
+                <form action="">
+                      占位符：<input type="text" placeholder="占位符"><br>
+                      自动聚焦：<input type="text" autofocus><br>
+                      多文件上传：<input type="file"  multiple><br>
+                      <!-- 自动完成会记忆上次的提交内容 -->
+                      自动完成：<input type="text" autocomplete name="userName"><br>
+                      <!-- 必填项: <input type="text" required><br> -->
+                      聚焦快捷键：<input type="text" accesskey="s"><br>
+                      <input type="submit"><br>
+                  </form>
+            </fieldset>  
+
     
 </body>
 </html>
