@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>定位</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      width: 1220px;
+    }
+
+    div {
+      width: 200px;
+      height: 100px;
+      margin: 2px auto;
+      border: 1px solid black;
+      text-align: center;
+    }
+
+    .relative {
+      /* 相对于静态定位下的位置进行定位 */
+      position: relative;
+      left: 10px;
+    }
+
+    .ab-wrapper {
+      position: relative;
+      padding: 30px; 
+      box-sizing: border-box
+    }
+    .absolute {
+      /* 相对于第一个非静态父元素进行定位 */
+      position: absolute;
+      top: -2px;
+      /* left: 10px; */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="static">static positioning</div>
+  <div class="relative">relative positioning</div>
+
+  <div class="ab-wrapper">
+    <div class="absolute">absolute positioning</div>
+  </div>
+
+</body>
+</html>

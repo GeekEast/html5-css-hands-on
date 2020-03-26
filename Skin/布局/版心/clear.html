@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>清除浮动</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .row {
+      margin: 2px auto;
+      width: 1220px;
+      text-align: center;
+      border: 1px solid red;
+      
+    }
+
+    .col {
+      float: left;
+      /* clear: left; */
+      border: 1px solid blue;
+      height: 50%;
+      box-sizing: border-box;
+      width: 50%;
+    }
+
+    .row:nth-child(2) {
+      height: 300px;
+    }
+
+    /* method 2: overflow */
+    /* .row:first-child {
+      overflow: hidden;
+    } */
+
+    /* method 1: clear: both  */
+    /* .clear {
+      clear: both;
+    } */
+
+    /* method 3: :after  */
+    /* .row:nth-child(1):after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+    .row:nth-child(1) {
+      *zoom:1;
+    } */
+
+    /* method 4: before & after */
+    .row:nth-child(1):before, .row:nth-child(1):after {
+      content: "";
+      display: table; /* 还可以防止外边距合并 */
+    }
+    .row:nth-child(1):after {
+      clear: both;
+    }
+    .row:nth-child(1) {
+      *zoom: 1;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="row">
+    <div class="col">浮动元素A</div>
+    <div class="col">浮动元素B</div>
+
+    <!-- <div class="clear"></div> -->
+  </div>
+  <div class="row">父元素2</div>
+  
+</body>
+</html>

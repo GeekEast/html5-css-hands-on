@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>两列左窄右宽</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .top, .banner, .main, .footer {
+      width: 960px;
+      margin: 0 auto;
+      text-align: center;
+      border: 1px solid black;
+      margin-bottom: 2px;
+
+      height: 200px;
+    }
+
+    .left, .right {
+      float: left;
+    }
+    .left {
+      width: 30%;
+    }
+    .right {
+      width: 70%;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="top">top</div>
+  <div class="banner">banner</div>
+  <div class="main">
+    <div class="left">left</div>
+    <div class="right">right</div>
+  </div>
+  <div class="footer">footer</div>
+  
+</body>
+</html>

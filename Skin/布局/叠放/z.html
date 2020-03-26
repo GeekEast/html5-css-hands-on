@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>叠放次序</title>
+  <style>
+    div {
+      width: 1000px;
+      height: 100px;
+      position: relative;
+      top:0;
+      left: 0;
+    }
+    div:first-child {
+      background-color: red;
+      z-index:1;
+    }
+
+    div:nth-child(2) {
+      background-color: blue;
+      z-index: 2;
+    }
+
+    div:last-child {
+      background-color: pink;
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <div></div>
+  <div></div>
+  
+</body>
+</html>

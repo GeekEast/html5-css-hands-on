@@ -14,28 +14,11 @@
   url()...,
   url()..., 多背景图片, **背景色通常定义在最后背景图上面**
 
-### 文字凸起
-```css
-text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
-```
 
-### 文字凹陷
-```css
-text-shadow: 1px 1px 1px #fff, 1px 1px 1px #000;
-```
-
-### 文字垂直居中
-```css
-line-height: box-height
-```
-
-### text-decoration
-```css
- /* 无效果 */ none
- /* 下划线 */ underline
- /* 上划线 */ overline
- /* 横穿线 */ line-through
-```
-
-
-> 有些效果是通过图片来实现的
+## _插入图片和背景图片区别_
+项目| 背景图片  | 插入图片
+---------|----------|---------
+ 修改大小 | `background-size` | `width`, `height`
+ 调整位置 | `background-position` | `margin`
+ 占位 | 位于底层， 不占位置 | 占位置
+ 使用情形 | logo，图片, 图标| 产品图片

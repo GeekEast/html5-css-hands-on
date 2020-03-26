@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>line-height Demo</title>
+  <style>
+    div {
+      text-align: center;
+      color: white;
+      margin-bottom: 2px;
+    }
+    .t1 {
+      font-size: 16px;
+      line-height:100px;
+      border: 1px solid red;
+      background: blue;
+    }
+
+    .t2 {
+      font-size: 16px;
+      height: 100px;
+      line-height: 100px;
+      border: 1px solid red;
+      background: blue;
+    }
+
+    .explanation {
+      height: 200px;
+      border: 1px solid #333;
+      background: black;
+      line-height: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="t1">未指定height的div元素,使用line-height后自动垂直居中; 且块级元素高度由line-height完全决定</div>
+  <div class="t2">具有height的div元素,当且仅当line-height等于height时，文字才能够垂直居中</div>
+  <div class="explanation">
+    在line-height区域内，文字永远都是居中的
+    <br>
+    如果不指定div的高度，div则有line-height撑开，文字自然垂直居中
+    <br>
+    如果定制div的高度，在单行文本的情况下，想要实现文字垂直居中的效果，必须让line-height区域在垂直方向上占满div，就必须让line-height等于height才行
+    <br>
+    如果定制div的高度，在多行文本的情况下，想要实现文字整体垂直居中的效果，那么line-height等于heigh/行数
+  </div>
+</body>
+</html>

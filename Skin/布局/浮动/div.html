@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>块级元素同一行</title>
+
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      /* display: inline-block; 放置于一行.但是元素间的空隙很难消除 */
+      float: left;
+    }
+
+    div:nth-child(2) {
+      background-color:  red;
+    }
+
+    div:last-child {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  
+</body>
+</html>

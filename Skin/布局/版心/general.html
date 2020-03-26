@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>通栏平均分布型</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .top, .footer {
+      width: 100%;
+      text-align: center;
+      height: 200px;
+      border: 1px solid red;
+    }
+    .banner {
+      height: 100px;
+    }
+
+    .main {
+      height: 500px;
+    }
+
+    .row {
+      height: 250px;
+      margin-bottom: 2px;
+      border: 1px solid darkblue
+    }
+
+    .r1, .r2 {
+      box-sizing: border-box;
+      width: 25%;
+      height: 100%;
+      border: 1px solid black;
+      font-size: 29px;
+      line-height: 29px;
+    }
+
+    .r1 {
+      float:left;
+    }
+
+    .r2 {
+      float: left; 
+    }
+
+
+
+
+
+
+    .banner, .main {
+      width: 960px;
+      margin: 0 auto 2px;
+      text-align: center;
+      border: 1px solid blue;
+
+    }
+
+    
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="top">top</div>
+  <div class="banner">banner</div>
+  <div class="main">
+    <div class="row">
+      <div class='r1'>1</div>
+      <div class='r1'>2</div>
+      <div class='r1'>3</div>
+      <div class='r1'>4</div>
+    </div>
+
+    <div class="row">
+      <div class='r2'>1</div>
+      <div class='r2'>2</div>
+      <div class='r2'>3</div>
+      <div class='r2'>4</div>
+    </div>
+  </div>
+  <div class="footer">footer</div>
+  
+</body>
+</html>

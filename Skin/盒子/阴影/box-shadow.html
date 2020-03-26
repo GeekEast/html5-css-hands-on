@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>仿小米阴影效果</title>
+  <style>
+
+    body {
+      background-color: #f5f5f5;
+    }
+    .wrapper:hover {
+      box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    }
+
+    div {
+      height: 280px;
+      width: 234px;
+      padding: 20px 0;
+      position: relative;
+      margin: 200px auto;
+
+      background: #fff;
+      transition: all .2s linear;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    a { 
+      text-decoration: none;
+      color: #757575;
+      background-color: rgba(0,0,0,0);
+      cursor: pointer;
+    }
+
+    .img {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto 18px;
+    }
+    img {
+      width: 160px;
+      height: 160px;
+    }
+
+    h3 {
+      margin: 0 10px 2px;
+      text-align: center;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 14px;
+      font-weight: 400;
+      color: #333
+    }
+
+    .desc {
+      margin: 0 10px 10px;
+      height: 18px;
+      font-size: 12px;
+      color: #b0b0b0;
+      text-align: center;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 14px;      
+    }
+
+    .price {
+      margin: 0 10px 14px;
+      text-align: center;
+      color: #ff6700;
+    }
+
+  </style>
+</head>
+<body>
+  <div class='wrapper'>
+    <li>
+      <a href="" target="_blank">
+        <div class="img">
+          <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0099822e42b4428cb25c4cdebc6ca53d.jpg?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+        </div>
+
+        <h3>小米10</h3>
+        <p class="desc">骁龙865/1亿像素相机</p>
+        <p class="price">
+          <span>3999</span>
+          "元"
+          <span>起</span>
+        </p>
+
+    
+      </a>
+    </li>
+
+  </div>
+
+  
+</body>
+</html>

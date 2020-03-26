@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>鼠标经过显示二维码</title>
+  <style>
+
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: palegoldenrod;
+      /* 文字水平居中 */
+      text-align: center;
+      /* 文字垂直居中 */
+      line-height: 100px;
+      /* 文档流 父相 */
+      position: relative; 
+    }
+
+    div img {
+      /* 默认占空间隐藏 */
+      display: none;
+      /* 脱离文档流下，只占文档流之外的空间 */
+      position: absolute;
+    }
+
+    div:hover img {
+      /* hover时显示 */
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    扫二维码
+    <img src="1.jpg" alt="">
+  </div>
+  <span>hello world</span>
+</body>
+</html>

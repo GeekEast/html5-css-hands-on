@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font: 14px/1.5 "Microsoft YaHei",Tahoma,"simsun",sans-serif;
+    background-image: url('./machao.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    background-color:rgba(0,0,0,0.8);
+    position: relative;
+    top:-20px;
+}
+
+.header-inner {
+    position: relative;
+    width: 1200px;
+    height: 86px;
+    margin: 0 auto;
+    
+}
+
+h1 {
+    display: block;
+    margin-block-start: 0.10em;
+    margin-block-end:0.21em;
+    margin-inline-start: 0.21em;
+    margin-inline-end: 0.21em;
+    font-weight: bold;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    z-index: 100;
+    background: url('./logo.png') no-repeat center center;
+    width: 200px;
+    height: 54px;
+    text-indent: -999px;
+    overflow: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+.main {
+    width: 840px;
+    padding-left: 260px;
+}
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.main li {
+    float: left;
+    width: 120px;
+    height: 84px;
+    text-align: center;
+}
+
+
+.main li:hover a {
+    color: #e4b653;
+    background: url('./index.png') no-repeat;
+
+}
+
+.main a {
+    display: block;
+    width: 110px;
+    height: 64px;
+    padding: 20px 0 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.main em {
+    padding-top: 5px;
+    font-size: 12px;
+    line-height: 16px;
+    font-style: normal  /* 修正斜体 */
+}
