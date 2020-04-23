@@ -4,8 +4,8 @@
 - **布局方式三**: `flexbox` 
 
 ### Concepts
-- **主轴(main)**: flex-direction
-- **副轴(cross)**: `垂直`于flex-direction
+- **主轴(main)**: flex-direction, 主轴**长度**由定义了`display:flex`元素的`width`/`height`来决定
+- **副轴(cross)**: `垂直`于flex-direction， 副轴**长度**由定义了`display:flex`元素的`height`/`width`来决定
 
 ### Container
 - **flex-direction**: `主轴`
