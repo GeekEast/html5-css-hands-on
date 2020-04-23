@@ -23,6 +23,8 @@
     flex-direction: column;
 }
 ```
+- **width**: 主轴为`row`时，设定为**主轴长度**; 主轴为`column`时，设定为**副轴长度**;
+- **height**: 主轴是`column`时，设定为**主轴长度**; 主轴为`row`时，设定为**副轴长度**;
 
 - **justify-content**: `主轴`方向对齐方式
 <p align="center"><img style="display: block; width: 600px; margin: 0 auto;" src=img/2020-04-22-18-46-44.png alt="no image found"></p>
