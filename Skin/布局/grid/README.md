@@ -63,8 +63,7 @@
 - `justify-content`: 多行整体对齐方式
 - `align-content`: 多列整体对齐方式
 - `place-content`: 团儿整齐对齐方式
-<!-- TODO: 对dense的研究 -->
-- `grid-auto-flow`: 在item处未添加grid配置时默认排列方式
+- `grid-auto-flow`: 在item处未添加grid配置时默认排列方式 <!-- TODO: 对dense的研究 -->
 - `grid`: 极简版本 我不喜欢谢谢
 
 ### Item
